@@ -67,6 +67,8 @@ EXAMPLE USAGE: {{ include "airflow.init_container.install_pip_packages" (dict "R
     - "/usr/bin/dumb-init"
     - "--"
   args:
+    - "bash"
+    - "-c"
     - "pip"
     - "install"
     - "--target"
